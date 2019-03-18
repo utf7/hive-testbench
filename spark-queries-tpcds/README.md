@@ -8,7 +8,7 @@ These are the full 99 TPC-DS queries from Apache Spark 2.2.
 # Hive:
 - q24
 
-Hive 跑不过去，建议使用 https://github.com/hortonworks/hive-testbench/blob/hdp3/sample-queries-tpcds/query24.sql
+Hive 跑不过去，建议使用hive的sql  https://github.com/hortonworks/hive-testbench/blob/hdp3/sample-queries-tpcds/query24.sql
 
 - q53:
 
@@ -16,7 +16,7 @@ Hive 跑不过去，建议使用 https://github.com/hortonworks/hive-testbench/b
 8 moreCaused by: java.lang.NullPointerException at org.apache.hadoop.hive.ql.exec.persistence.PTFRowContainer.first(PTFRowContainer.java:115) at org.apache.hadoop.hive.ql.exec.PTFPartition.iterator(PTFPartition.java:114) 
 ```
 
-[Hive-18786](https://issues.apache.org/jira/browse/HIVE-18786)
+打入patch [Hive-18786](https://issues.apache.org/jira/browse/HIVE-18786)
 
 - q64
 
