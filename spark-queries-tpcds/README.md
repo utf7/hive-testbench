@@ -12,9 +12,11 @@ Hive 跑不过去，建议使用 https://github.com/hortonworks/hive-testbench/b
 
 - q53:
 
-```8 moreCaused by: java.lang.NullPointerException at org.apache.hadoop.hive.ql.exec.persistence.PTFRowContainer.first(PTFRowContainer.java:115) at org.apache.hadoop.hive.ql.exec.PTFPartition.iterator(PTFPartition.java:114) 
 ```
-https://issues.apache.org/jira/browse/HIVE-18786
+8 moreCaused by: java.lang.NullPointerException at org.apache.hadoop.hive.ql.exec.persistence.PTFRowContainer.first(PTFRowContainer.java:115) at org.apache.hadoop.hive.ql.exec.PTFPartition.iterator(PTFPartition.java:114) 
+```
+
+[Hive-18786](https://issues.apache.org/jira/browse/HIVE-18786)
 
 - q72 
 
