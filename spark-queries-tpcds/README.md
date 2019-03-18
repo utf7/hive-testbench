@@ -5,7 +5,7 @@ These are the full 99 TPC-DS queries from Apache Spark 2.2.
 问题
 ========
 
-* Hive:
+# Hive:
 - q24
 
 Hive 跑不过去，建议使用 https://github.com/hortonworks/hive-testbench/blob/hdp3/sample-queries-tpcds/query24.sql
@@ -26,7 +26,7 @@ Hive 跑不过去，建议使用 https://github.com/hortonworks/hive-testbench/b
 
 Hive 时间很长
 
-* Spark:
+# Spark:
 
 Spark 部分语句跑不了，需要设置：
 spark.sql.crossJoin.enabled=true
