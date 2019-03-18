@@ -18,6 +18,10 @@ Hive 跑不过去，建议使用 https://github.com/hortonworks/hive-testbench/b
 
 [Hive-18786](https://issues.apache.org/jira/browse/HIVE-18786)
 
+-q64
+
+增加 LIMIT 100
+
 - q72 
 
 Hive 时间很长
