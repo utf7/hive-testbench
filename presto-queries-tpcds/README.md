@@ -23,5 +23,17 @@ These are the full 99 TPC-DS queries from Presto.
 
 字段错误：c_last_review_date_sk 修改为c_last_review_date
 
+-  q14_1:
+
+Query 20190312_005656_00001_dxv4p failed: Number of stages in the query (102) exceeds the allowed maximum (100). If the query contains multiple DISTINCTs, please set the use_mark_distinct session property to false. If the query contains multiple CTEs that are referenced more than once, please create temporary table(s) for one or more of the CTEs.
+
+原因：
+
+默认情况下Presto 最大Stage 限制为100，可以通过设置query_max_stage_count 解决
+
+
+解决方案：
+
+--session query_max_stage_count=200 ，由于该查询有102个stage，需要指定大于这个值即可
 
 
