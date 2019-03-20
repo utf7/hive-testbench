@@ -28,6 +28,14 @@ Hive 时间很长
 
 # Spark:
 
-Spark 部分语句跑不了，需要设置：
-spark.sql.crossJoin.enabled=true
 
+Spark  有几个SQL 跑不过：
+q28.sql q61.sql q77.sql q88.sql q90.sql
+
+报错：Error in query: Detected cartesian product for INNER join between logical plans
+Join condition is missing or trivial.
+Use the CROSS JOIN syntax to allow cartesian products between these relations.;
+ 
+需要开启crossJoin
+
+spark.sql.crossJoin.enabled=true
